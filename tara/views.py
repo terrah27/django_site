@@ -1,5 +1,5 @@
 from django.shortcuts import render
 from django.shortcuts import HttpResponse
 
-def index(request):
-	return HttpResponse('Hello World')
+def post_list(request):
+    return render(request, 'blog/post_list.html', {})
